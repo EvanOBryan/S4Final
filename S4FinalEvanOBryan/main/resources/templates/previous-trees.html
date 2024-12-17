@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Previous Trees</title>
+</head>
+<body>
+<h1>Previously Stored Binary Search Trees</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Input Numbers</th>
+        <th>Tree Structure (JSON)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="tree : ${trees}">
+        <td th:text="${tree.inputNumbers}"></td>
+        <td th:text="${tree.treeStructure}"></td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<a href="/enter-numbers">Back to Input</a>
+</body>
+</html>
